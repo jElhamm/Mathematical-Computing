@@ -1,4 +1,4 @@
-# In this program, I can calculate square matrices up to order 4.
+# This program can calculate determinants of square matrices up to order 4.
 
 # For (2x2) matrices, the opposite formula is used:   if [a , b]
 #                                                        [c , d]            ===>  Determinant = ad - bc
