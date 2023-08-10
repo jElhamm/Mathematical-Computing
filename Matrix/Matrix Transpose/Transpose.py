@@ -41,9 +41,9 @@ def  banner():
 #             You can use this program to calculate the transpose of matrices.           #
 #        To find (Transpose) a matrix, the position of rows and columns is changed.      #
 #                                                                                        #
-#                                                T      [a , d]                           #
-#               for example:          [a , b , c]       [b , e]                           #   
-#                                     [d , e , f]   =   [c , f]                           #
+#                                                T      [a , d]                          #
+#               for example:          [a , b , c]       [b , e]                          #   
+#                                     [d , e , f]   =   [c , f]                          #
 #                                                                                        #
 ##########################################################################################
         """)
