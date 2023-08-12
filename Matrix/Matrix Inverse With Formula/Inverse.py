@@ -61,7 +61,7 @@ def main():
     print("**********************************************************\n  Entered Matrix:")
     matrix.display()
     inverseMatrix = matrix.inverse()
-    print("**********************************************************\n  Transposed Matrix:")
+    print("**********************************************************\n  Inverse Matrix:")
     for row in inverseMatrix:
         print(row)
     print("**********************************************************\n")
