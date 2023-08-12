@@ -73,7 +73,7 @@ def  banner():
 #  ==>  Multiply the second row by -2 and add it to the first row to make the top left element (0):    [1 0 | -2 1]       #
 #                                                                                                      [0 1 | 3/2 -1/2]   #
 #                                                                                                                         #
-#  ==> The left side of the augmented matrix is now the inverse of matrix B:                B^(-1)  =  [-2    1]          #
+#  ==> The left side of the augmented matrix is now the inverse of matrix A:                A^(-1)  =  [-2    1]          #
 #                                                                                                      [3/2  -1/2]        #
 #                                                                                                                         #          
 ###########################################################################################################################
