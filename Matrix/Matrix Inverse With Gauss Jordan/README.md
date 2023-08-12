@@ -2,13 +2,14 @@
 
    This program calculates the inverse of a square matrix using the Gauss-Jordan elimination method. The program can perform inverse matrix calculations for square matrices only.
 
-## Introduction
+## Usage
 
    1. Run the program.
    2. Enter the number of rows and columns for the matrix.
    3. Enter the elements of the matrix row by row.
    4. The program will display the entered matrix.
-   5. The program will calculate the inverse matrix using the Gauss-Jordan elimination method.
+   5. The program will calculate the inverse matrix using the Gauss-Jordan 
+      elimination method.
    6. The program will display the inverse matrix.is implemented using a specific programming language.
 
 ## Example

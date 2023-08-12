@@ -10,14 +10,13 @@
 
                        (Where I is the identity matrix.)
 
-## Introduction
+## Usage
 
    1. Run the program.
    2. Enter the number of rows and columns for the matrix.
-   3. Enter the elements of the matrix row by row.
-   4. Once you have entered all the elements, the program will display the entered matrix.
-   5. The program will then calculate the inverse of the matrix.
-   6. Finally, the program will display the inverse matrix.
+   3. Enter the elements of the matrix.
+   4. The program will display the entered matrix. matrix.
+   5. The program will calculate and display the transpose matrix.
 
 ## Formula
    To calculate the inverse of a 2x2 matrix, the following formula is used:
