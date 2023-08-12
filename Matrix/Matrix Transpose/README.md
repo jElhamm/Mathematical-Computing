@@ -34,12 +34,16 @@
 
 
 
-  Here's a step-by-step example using the matrix :    [[1 , 2 , 3],
-                                                       [4 , 5 , 6]]
+  Here's a step-by-step example using the matrix : 
 
-   * Create a new matrix with 3 rows and 2 columns:   [[0 , 0],
-                                                       [0 , 0],
-                                                       [0 , 0]]
+                     [[1 , 2 , 3],
+                      [4 , 5 , 6]]
+
+   * Create a new matrix with 3 rows and 2 columns:
+
+                     [[0 , 0],
+                      [0 , 0],
+                      [0 , 0]]
  
   * Place the elements of the original matrix in the transpose matrix:
 
@@ -50,9 +54,11 @@
          Element 5 (position 2 , 2) --> Transpose position (2 , 2)
          Element 6 (position 2 , 3) --> Transpose position (3 , 2)
 
-  * The transpose matrix is:        [[1 , 4]
-                                     [2 , 5]
-                                     [3 , 6]]
+  * The transpose matrix is:
+
+                  [[1 , 4],
+                   [2 , 5],
+                   [3 , 6]]
 
 ## Note
 
