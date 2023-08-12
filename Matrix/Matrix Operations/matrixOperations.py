@@ -4,8 +4,8 @@
 # The sum of matrices is calculated face to face:          if [a , b]     [e , f]     [a+e , b+f]
 #                                                             [c , d]  +  [g , h]  =  [c+g , d+h]
 
-# Subtraction of matrices is calculated face to face:      if [a , b]     [e , f]     [a+e , b+f]
-#                                                             [c , d]  -  [g , h]  =  [c+g , d+h]
+# Subtraction of matrices is calculated face to face:      if [a , b]     [e , f]     [a-e , b-f]
+#                                                             [c , d]  -  [g , h]  =  [c-g , d-h]
 
 # Matrix multiplication is calculated face to face:        if [a , b , c]     [g , h]     [ag+bi+ck , ah+bg+cl]
 #                                                             [d , e , f]  X  [i , g]  =  [dg+ei+fk , dh+eg+fl]
