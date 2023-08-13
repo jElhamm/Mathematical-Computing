@@ -35,7 +35,8 @@ This program is a matrix calculator that allows users to perform basic operation
                         B = [[ e , f ],                           [ c + g  ,  d + h ]]
                              [ g , h ]]
 
-   * Subtraction of matrices is calculated as follows:     
+   * Subtraction of matrices is calculated as follows: 
+       
                         A = [[ a , b ],
                              [ c , d ]]  
                                                  --->   A - B =  [[ a - e  ,  b - f ],
