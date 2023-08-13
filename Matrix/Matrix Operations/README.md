@@ -29,27 +29,27 @@ This program is a matrix calculator that allows users to perform basic operation
 
    * The sum of the matrices is calculated as follows:
 
-                        A = [[a , b],
-                             [c , d]]  
-                                                 --->   A + B =  [[a+e , b+f],
-                        B = [[e , f],                             [c+g , d+h]]
-                             [g , h]]
+                        A = [[ a , b ],
+                             [ c , d ]]  
+                                                 --->   A + B =  [[ a + e  ,  b + f ],
+                        B = [[ e , f ],                           [ c + g  ,  d + h ]]
+                             [ g , h ]]
 
    * Subtraction of matrices is calculated as follows:     
-                        A = [[a , b],
-                             [c , d]]  
-                                                 --->   A - B =  [[a-e , b-f],
-                        B = [[e , f],                             [c-g , d-h]]
-                             [g , h]]
+                        A = [[ a , b ],
+                             [ c , d ]]  
+                                                 --->   A - B =  [[ a - e  ,  b - f ],
+                        B = [[ e , f ],                           [ c - g  ,  d - h ]]
+                             [ g , h ]]
                              
    * Matrix multiplication is calculated as follows:       
                         
-                        A = [[a , b , c],    
-                             [d , e , f]] 
-                                                 --->   A X B =  [[a.g+bi+ck , ah+bg+cl],                    
-                        B = [[g , h]                              [dg+ei+fk , dh+eg+fl]]
-                             [i , g]
-                             [k , l]]
+                        A = [[ a , b , c ],    
+                             [ d , e , f ]] 
+                                                 --->   A X B =  [[ ag + bi + ck  ,  ah + bg + cl ],                    
+                        B = [[ g , h ]                            [ dg + ei + fk  ,  dh + eg + fl ]]
+                             [ i , g ]
+                             [ k , l ]]
 
 ## Note
 

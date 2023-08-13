@@ -19,33 +19,33 @@
 
    For example, consider a 2x2 matrix:
 
-                        A = [[1 , 2],
-                             [3 , 4]]
+                        A = [[ 1 , 2 ],
+                             [ 3 , 4 ]]
 
    * The inverse of this matrix can be calculated as follows:
 
-                        A = [[1 , 2 | 1 , 0],
-                             [3 , 4 | 0 , 1]]
+                        A = [[ 1 , 2 | 1 , 0 ],
+                             [ 3 , 4 | 0 , 1 ]]
    
    * Multiply the first row by -3 and add it to the second row to make the bottom left element 0:
 
-                        A = [[1 , 2  |  1 ,  0],
-                             [0 , -2 | -3 , 1]]
+                        A = [[ 1 , 2  |  1 ,  0 ],
+                             [ 0 , -2 | -3 , 1 ]]
     
    * Divide the second row by -2 to make the bottom left element 1:
 
-                        A = [[1 , 2 | 1 , 0],
-                             [0 , 1 | 3/2 , -1/2]]
+                        A = [[ 1 , 2 | 1 , 0 ],
+                             [ 0 , 1 | 3/2 , -1/2 ]]
 
    * Multiply the second row by -2 and add it to the first row to make the top left element 0:
 
-                        A = [[1 , 0 | -2 , 1],
-                             [0 , 1 | 3/2 , -1/2]]
+                        A = [[ 1 , 0 | -2 , 1 ],
+                             [ 0 , 1 | 3/2 , -1/2 ]]
 
    * The left side of the augmented matrix is the inverse of matrix A. Therefore, the inverse of matrix A is:
 
-                        A^(-1) = [[-2  ,  1],
-                                  [3/2 , -1/2]]
+                        A^(-1) = [[ -2  ,  1 ],
+                                  [ 3/2 , -1/2 ]]
 
 ## Note
 

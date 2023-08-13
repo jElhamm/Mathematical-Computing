@@ -24,21 +24,21 @@
 
    * To calculate the determinant of a (2x2) Matrix, the following formula is used:
 
-            A = [[a , b],
-                 [c , d]]            --->   Determinants A  = ad - bc
+            A = [[ a , b ],
+                 [ c , d ]]            --->   Determinants A  = ad - bc
 
    * To calculate the determinant of a (3x3) Matrix, the following formula is used:
 
-            A = [[a , b , c],
-                 [d , e , f],        --->   Determinants A = a(ei-fh) - b(di-fg) + c(dh-eg)
-                 [g , h , i]]
+            A = [[ a , b , c ],
+                 [ d , e , f ],        --->   Determinants A = a(ei-fh) - b(di-fg) + c(dh-eg)
+                 [ g , h , i ]]
 
    * To calculate the determinant of a (4x4) Matrix, the following formula is used:
 
-            A = [[a , b , c , d],                              |f  g  h|     |e  g  h|     |e  f  h|     |e  f  g|
-                 [e , f , g , h],    --->   Determinants A = a.|j  k  l| - b.|i  k  l| + c.|i  j  l| - d.|i  j  k|
-                 [i , j , k , l],                              |n  o  p|     |m  o  p|     |m  n  p|     |m  n  o|
-                 [m , n , o , p]]                           
+            A = [[ a , b , c , d ],                              | f  g  h |     | e  g  h |     | e  f  h |     | e  f  g |
+                 [ e , f , g , h ],    --->   Determinants A = a.| j  k  l | - b.| i  k  l | + c.| i  j  l | - d.| i  j  k |
+                 [ i , j , k , l ],                              | n  o  p |     | m  o  p |     | m  n  p |     | m  n  o |
+                 [ m , n , o , p ]]                           
                                                                                                  
 ## Note
 

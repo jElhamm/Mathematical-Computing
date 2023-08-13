@@ -25,25 +25,22 @@
 
    1. Create a new matrix with the number of rows equal to the number of columns in the original matrix, and the number of 
       columns equal to the number of rows in the original matrix. This new matrix will be the transpose matrix.
-
    2. Iterate through each element in the original matrix and place it in the corresponding position in the transpose matrix. 
       The position of the element in the original matrix is (i,j), and its corresponding position in the transpose matrix is 
       (j,i).
-
    3. Once all elements have been placed in the transpose matrix, print the transpose matrix.
-
 
 
   Here's a step-by-step example using the matrix : 
 
-                     [[1 , 2 , 3],
-                      [4 , 5 , 6]]
+                      A  =  [[ 1 , 2 , 3 ],
+                             [ 4 , 5 , 6 ]]
 
    * Create a new matrix with 3 rows and 2 columns:
 
-                     [[0 , 0],
-                      [0 , 0],
-                      [0 , 0]]
+                       [[0 , 0],
+                        [0 , 0],
+                        [0 , 0]]
  
   * Place the elements of the original matrix in the transpose matrix:
 
@@ -56,9 +53,9 @@
 
   * The transpose matrix is:
 
-                  [[1 , 4],
-                   [2 , 5],
-                   [3 , 6]]
+            transpose A =  [[ 1 , 4 ],
+                            [ 2 , 5 ],
+                            [ 3 , 6 ]]
 
 ## Note
 
