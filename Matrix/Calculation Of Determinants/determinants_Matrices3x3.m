@@ -5,8 +5,8 @@
 % For (3x3) matrices, the opposite formula is used:
 
 %                       if [[ a , b , c ],
-#                           [ d , e , f ],        ===>  Determinant = a(ei-fh) - b(di-fg) + c(dh-eg)
-#                           [ g , h , i ]]
+%                           [ d , e , f ],        ===>  Determinant = a(ei-fh) - b(di-fg) + c(dh-eg)
+%                           [ g , h , i ]]
 % 
 
 
