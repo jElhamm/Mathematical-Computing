@@ -37,6 +37,7 @@
 
 ## References
 
-   [Wikipedia.org. "Scalar multiplication."](https://en.wikipedia.org/wiki/Scalar_multiplication)
-   [geeksforgeeks.org. "Program for scalar multiplication of a matrix." ](https://www.geeksforgeeks.org/program-for-scalar-multiplication-of-a-matrix/?ref=gcse)
+   1. [Wikipedia.org. "Scalar multiplication."](https://en.wikipedia.org/wiki/Scalar_multiplication)
+
+   2. [geeksforgeeks.org. "Program for scalar multiplication of a matrix." ](https://www.geeksforgeeks.org/program-for-scalar-multiplication-of-a-matrix/?ref=gcse)
  
