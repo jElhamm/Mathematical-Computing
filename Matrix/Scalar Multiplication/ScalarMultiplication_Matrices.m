@@ -1,8 +1,8 @@
-% The following function can be used for matrix Scalar multiplication.
+% The following function can be used for matrix (Scalar multiplication).
 % It should be noted that to use this function, you must give a matrix and a number as input so that it can perform the operation for you.
 % At the end of the program, how to use the function is explained.
 
-% The mathematical form of how to calculate the multiplication of a number in a matrix:
+% The mathematical form of how to calculate the multiplication of a number in a Matrix:
 
 %         Scalar = s         m = [[ a , b ],      ===>      s.m = [[ sa , sb ],
 %                                 [ c , d ]]                       [ sc , sd ]]
