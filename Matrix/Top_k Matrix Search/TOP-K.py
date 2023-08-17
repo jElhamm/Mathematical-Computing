@@ -40,3 +40,39 @@ class Matrix:
                 top_k.append(self.matrix[i][j])                      # Add any element
         top_k = Matrix.sort_list(top_k)                              # Sort the list
         return top_k[:k]
+
+
+# This part of the code is written as an example to show the output of the code.
+# You can change or delete this section according to the needs of the hood.
+def  banner():
+    print("""
+        
+######################################################################################################
+#                                     ***   Welcome   ***                                            #
+#                                                                                                    #             
+#           You can use this program to search for the top elements (Top-k) in a matrix.             #
+#        This program has the ability to help you find the best elements by implementing the         #
+#    (Top-k) Algorithm and use it to analyze and improve the efficiency of systems and processes.    #
+#                                                                                                    #   
+######################################################################################################
+    """)
+
+def main():
+    banner()
+    rows = int(input("==> Enter the number of rows: "))
+    columns = int(input("==> Enter the number of columns: "))
+    matrix = Matrix(rows, columns)
+    matrix.enterElements()
+    print("**********************************************************\nEntered Matrix:")
+    matrix.display()
+
+    k = int(input("\n ==> Enter the value of (k): "))
+    top_k = matrix.top_k_elements(k)
+    print("**********************************************************")
+    print(f"==> Top {k} elements: {top_k}")
+    print("**********************************************************\n")
+
+if __name__ == "__main__":
+    main()
+    
+# The output of the algorithm is shown.    
