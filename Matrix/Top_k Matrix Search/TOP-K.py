@@ -19,3 +19,24 @@ class Matrix:
     def display(self):
         for row in self.matrix:
             print(row)
+
+    # Sort Elements
+    def sort_list(lst):
+        for i in range(len(lst)):
+            for j in range(i + 1, len(lst)):
+                if lst[i] < lst[j]:
+                    lst[i], lst[j] = lst[j], lst[i]
+        return lst
+    
+    # Get the number of rows of the matrix
+    def __len__(self):
+        return len(self.matrix)
+    
+    # Return the larger element
+    def top_k_elements(self, k):
+        top_k = []
+        for i in range(len(self.matrix)):                            # Considering the length of the matrix
+            for j in range(len(self.matrix[i])):                     # Considering the length of each row of the matrix       
+                top_k.append(self.matrix[i][j])                      # Add any element
+        top_k = Matrix.sort_list(top_k)                              # Sort the list
+        return top_k[:k]
