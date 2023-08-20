@@ -70,3 +70,8 @@ if __name__ == "__main__":
     main()
 
 # An example of how to use the program is shown.
+
+
+# Note: 
+# To use line 25 :       result = np.zeros((self.rows, self.columns))   ,
+#  we must import the numpy library.
