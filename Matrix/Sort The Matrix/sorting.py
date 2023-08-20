@@ -24,3 +24,11 @@ class Matrix:
         for row in self.matrix:
             print(row)
 
+    # Sort Function
+    def sort(self):
+        for i in range(self.rows):                                   # Repeat in each row
+            for j in range(self.columns):                                # Repeat in each column
+                for k in range(self.rows):                                   # Comparing the current element with each element in the matrix
+                    for l in range(self.columns):   
+                        if self.matrix[i][j] < self.matrix[k][l]:                # If the current element is smaller than the compared element,
+                            self.matrix[i][j], self.matrix[k][l] = self.matrix[k][l], self.matrix[i][j]        #  the elements are swapped.
