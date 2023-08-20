@@ -69,3 +69,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# An example of how to use the program is shown.
