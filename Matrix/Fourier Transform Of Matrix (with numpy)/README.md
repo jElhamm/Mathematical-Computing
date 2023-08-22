@@ -3,7 +3,7 @@
    The [Fourier Transform](https://en.wikipedia.org/wiki/Fourier_transform) is a mathematical technique that transforms a signal from its time domain representation to its frequency domain representation.
    It decomposes a signal into its constituent frequencies, allowing us to analyze and manipulate the different frequency components of the signal.
 
-   The Fourier transform can be applied to various types of signals, including [continuous-time signals](https://en.wikipedia.org/wiki/Discrete_time_and_continuous_time), [discrete-time signals](https://en.wikipedia.org/wiki/Discrete_time_and_continuous_time), and two-dimensional signals like images. In this program, we focus on the 2D Fourier transform, specifically for matrices.
+   The Fourier transform can be applied to various types of signals, including [*continuous-time signals*](https://en.wikipedia.org/wiki/Discrete_time_and_continuous_time), [*discrete-time signals*](https://en.wikipedia.org/wiki/Discrete_time_and_continuous_time), and *two-dimensional signals* like images. In this program, we focus on the 2D Fourier transform, specifically for matrices.
 
 
 ## [Fast Fourier Transform (FFT)](https://en.wikipedia.org/wiki/Fast_Fourier_transform)
