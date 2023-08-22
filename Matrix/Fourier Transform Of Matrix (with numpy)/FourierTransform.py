@@ -4,6 +4,7 @@
 # Fourier series method is used in this program.
 
 
+import numpy as np
 class Matrix:
     def __init__(self, rows, columns):
         self.rows = rows
@@ -21,3 +22,11 @@ class Matrix:
     def display(self):
         for row in self.matrix:
             print(row)
+
+    # Two-dimensional Fourier transform function 
+    def fft(self):                                                  
+        matrix_np = np.array(self.matrix)               # Convert the matrix to numpy array                        
+        fft_matrix = np.fft.fft2(matrix_np)             # Compute the Fast Fourier Transform of the matrix
+        return fft_matrix                               # output == The final result of the two-dimensional fast Fourier transform
+    
+
