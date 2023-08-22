@@ -1,7 +1,6 @@
 # You can use this program to calculate the Fourier transform of matrices.
 # We use the (numpy) library to perform calculations.
-
-# Fourier series method is used in this program.
+# This program uses the *FFT (Fast Fourier Transform)* Algorithm to calculate the 2D Fast Fourier Transform
 
 
 import numpy as np
@@ -30,3 +29,39 @@ class Matrix:
         return fft_matrix                               # output == The final result of the two-dimensional fast Fourier transform
     
 
+
+# This part of the code is written as an example to show the output of the code.
+# According to your needs, you can change or delete this part.
+
+def  banner():
+    print("""
+        
+###########################################################################################################
+#                                   ***   Welcome   ***                                                   #
+#                                                                                                         #             
+#             You can use this program to calculate the Fourier transform of a matrix.                    #
+#          This program uses the *FFT (Fast Fourier Transform)* Algorithm to calculate the                #
+#       2D Fast Fourier Transform. To perform the Fourier transform of the input matrix, you can          #
+#    use the numpy library. This library has fft function to perform fast Fourier transform of matrix.    #
+#                                                                                                         #
+###########################################################################################################
+    """)
+
+def main():
+    banner()
+    rows = int(input("==> Enter the number of rows: "))
+    columns = int(input("==> Enter the number of columns: "))
+    matrix = Matrix(rows, columns)
+    matrix.enterElements()
+    print("**********************************************************\n ==> Entered Matrix:")
+    matrix.display()
+    
+    fft_matrix = matrix.fft()
+    print("**********************************************************\n ==> Fast Fourier Transform of the matrix:")
+    print(fft_matrix)
+    print("**********************************************************\n")
+
+if __name__ == "__main__":
+    main()
+
+# An example of how to use the program is shown.
