@@ -43,9 +43,10 @@
 
    * In this case, our Fourier matrix will be as follows:
    
-        ==> Fast Fourier Transform of the Matrix:   [[ 12. +0.j  ,  -3.5-0.5j          ,  -3.5-1.5j       ],
+            Fast Fourier Transform of the Matrix =  [[ 12. +0.j  ,  -3.5-0.5j          ,  -3.5-1.5j       ],
                                                      [ -10.+0.j  ,  -0.5-1.73205081j   ,  0.5+0.8660254j  ],
                                                      [  4.+0.j   ,  -0.5+0.5j          ,  -0.5+0.5j       ]]
+
 
 ## References
 
