@@ -37,3 +37,36 @@ class Matrix:
         for i in range(self.columns):                                                       # Apply FFT on each column
             self.matrix[i] = self.fft1D(self.matrix[i])
         self.matrix = [list(col) for col in zip(*self.matrix)]                              # Transpose the matrix back
+
+    # One-dimensional Fourier transform function
+    def fft1D(self, row):
+        n = len(row)
+        # Base case for recursion
+        if n == 1:                                                                          
+            return row
+        
+        # Splitting the row into even and odd indexes
+        evenIndexes = []
+        oddIndexes = []
+        for i in range(n):
+            if i % 2 == 0:
+                evenIndexes.append(row[i])
+            else:
+                oddIndexes.append(row[i])
+        
+        # Recursive step
+        even_result = self.fft1D(evenIndexes)
+        odd_result = self.fft1D(oddIndexes)
+
+        # Calculate omega values
+        omega = []
+        for k in range(n//2):
+            omegaValue = complex(math.cos(2 * math.pi * k / n), -math.sin(2 * math.pi * k / n))
+            omega.append(omegaValue)
+        
+        # Combine the results
+        combinedResult = [0] * n
+        for k in range(n//2):
+            combinedResult[k] = even_result[k] + omega[k] * odd_result[k]
+            combinedResult[k + n//2] = even_result[k] - omega[k] * odd_result[k]
+        return combinedResult
