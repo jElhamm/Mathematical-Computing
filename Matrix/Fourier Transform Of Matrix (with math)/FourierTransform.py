@@ -5,7 +5,6 @@
 # The implementation of the algorithm has been done in this program.
 
 import math
-
 class Matrix:
     def __init__(self, rows, columns):
         self.rows = rows
@@ -23,3 +22,18 @@ class Matrix:
     def display(self):
         for row in self.matrix:
             print(row)
+
+    # Fast Fourier Transform (FFT)
+    # A method to calculate the (2D Fast Fourier Transform) matrix       
+    def fft(self):
+        if math.log2(self.rows) % 1 != 0 or math.log2(self.columns) % 1 != 0:               # Check if number of rows and columns are powers of 2
+            print("( ! Error: Number of rows and columns must be powers of 2. ! )")
+            return
+        
+        for i in range(self.rows):                                                          # Apply FFT on each row
+            self.matrix[i] = self.fft1D(self.matrix[i])
+        self.matrix = [list(col) for col in zip(*self.matrix)]                              # Transpose the matrix
+        
+        for i in range(self.columns):                                                       # Apply FFT on each column
+            self.matrix[i] = self.fft1D(self.matrix[i])
+        self.matrix = [list(col) for col in zip(*self.matrix)]                              # Transpose the matrix back
