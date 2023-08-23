@@ -70,3 +70,40 @@ class Matrix:
             combinedResult[k] = even_result[k] + omega[k] * odd_result[k]
             combinedResult[k + n//2] = even_result[k] - omega[k] * odd_result[k]
         return combinedResult
+    
+
+# This part of the code is written as an example to show the output of the code.
+# According to your needs, you can change or delete this part.
+
+def  banner():
+    print("""
+        
+##########################################################################################
+#                                ***   Welcome   ***                                     #
+#                                                                                        #             
+#       You can use this program to calculate the Fourier transform of a matrix.         #
+#                                                                                        #
+#          " This program uses the *FFT (Fast Fourier Transform)* Algorithm              #
+#            to calculate the 2D Fast Fourier Transform. In this program,                #
+#             we perform the calculatio by implementin the FFT Algorithm. "              #
+#                                                                                        #
+##########################################################################################
+    """)
+
+def main():
+    banner()
+    rows = int(input("==> Enter the number of rows: "))
+    columns = int(input("==> Enter the number of columns: "))
+    matrix = Matrix(rows, columns)
+    matrix.enterElements()
+    print("**********************************************************\n ==> Entered Matrix:")
+    matrix.display()
+    print("**********************************************************\n ==> Fast Fourier Transform of the matrix:")
+    matrix.fft()
+    matrix.display()
+    print("**********************************************************\n")
+
+if __name__ == "__main__":
+    main()
+
+# An example of how to use the program is shown.
