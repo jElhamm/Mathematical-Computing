@@ -107,3 +107,10 @@ if __name__ == "__main__":
     main()
 
 # An example of how to use the program is shown.
+
+# Note:
+#      the statement(Line 64):    omegaValue = complex(math.cos(2 * math.pi * k / n), -math.sin(2 * math.pi * k / n))
+
+#      calculates the complex number value of the omega term used in the Fourier transform. 
+#      The real part of the omega term is given by math.cos(2 * math.pi * k / n) 
+#      and the imaginary part is -math.sin(2 * math.pi * k / n).
