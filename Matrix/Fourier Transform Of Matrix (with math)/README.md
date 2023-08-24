@@ -8,43 +8,43 @@
 
 ## [Fast Fourier Transform (FFT)](https://en.wikipedia.org/wiki/Fast_Fourier_transform)
 
-                                  " The (FFT Algorithm) is a fast and efficient algorithm for calculating the discrete Fourier transform. "
-                          " It exploits the symmetry and periodicity properties of the Fourier transform to reduce the number of computations. "
+                     " The (FFT Algorithm) is a fast and efficient algorithm for calculating the discrete Fourier transform. "
+                 " It exploits the symmetry and periodicity properties of the Fourier transform to reduce the number of computations. "
 
-                             _______________________________________________________________________________________________________________
-                            |  ST |                                                                                                         |
-                            |  EP |                 How the       * Fast Fourier Transform (FFT) *       Algorithm works                    |
-                            |_____|_________________________________________________________________________________________________________|
-                            |  1  | Check if the number of rows and columns is a power of 2. If not, display an error message and return.   |
-                            |_____|_________________________________________________________________________________________________________|
-                            |  2  | Apply the 1D FFT on each row of the matrix.                                                             |
-                            |_____|_________________________________________________________________________________________________________|
-                            |  3  | Transpose the matrix.                                                                                   |
-                            |_____|_________________________________________________________________________________________________________|
-                            |  4  | Apply the 1D FFT on each column of the transposed matrix.                                               |
-                            |_____|_________________________________________________________________________________________________________|
-                            |  5  | Transpose the matrix back to its original form.                                                         |
-                            |_____|_________________________________________________________________________________________________________|
+                    _______________________________________________________________________________________________________________
+                    |  ST |                                                                                                         |
+                    |  EP |                 How the       * Fast Fourier Transform (FFT) *       Algorithm works                    |
+                    |_____|_________________________________________________________________________________________________________|
+                    |  1  | Check if the number of rows and columns is a power of 2. If not, display an error message and return.   |
+                    |_____|_________________________________________________________________________________________________________|
+                    |  2  | Apply the 1D FFT on each row of the matrix.                                                             |
+                    |_____|_________________________________________________________________________________________________________|
+                    |  3  | Transpose the matrix.                                                                                   |
+                    |_____|_________________________________________________________________________________________________________|
+                    |  4  | Apply the 1D FFT on each column of the transposed matrix.                                               |
+                    |_____|_________________________________________________________________________________________________________|
+                    |  5  | Transpose the matrix back to its original form.                                                         |
+                    |_____|_________________________________________________________________________________________________________|
 
 ## 1D FFT
 
                                               " The (1D Fourier Transform Algorithm) is implemented in the fft1D() method."
-                                     " This function is an auxiliary function that we use to calculate the (2D Fourier Transform). "
+                                " This function is an auxiliary function that we use to calculate the (2D Fourier Transform). "
 
-                       ___________________________________________________________________________________________________________________________
-                      |  ST |                                                                                                                     |
-                      |  EP |                     How the       * 1D Fast Fourier Transform (FFT) *       Algorithm works                         |
-                      |_____|_____________________________________________________________________________________________________________________|
-                      |  1  | If the length of the row is 1 (base case), return the row as it is.                                                 |
-                      |_____|_____________________________________________________________________________________________________________________|
-                      |  2  | Split the row into even and odd indexes.                                                                            |
-                      |_____|_____________________________________________________________________________________________________________________|
-                      |  3  | Recursively apply the 1D FFT on the even and odd indexes.                                                           |
-                      |_____|_____________________________________________________________________________________________________________________|
-                      |  4  | Calculate the omega values, which are complex numbers representing the exponential term in the Fourier transform.   |
-                      |_____|_____________________________________________________________________________________________________________________|
-                      |  5  | Combine the results of the even and odd indexes by adding and subtracting the omega values.                         |
-                      |_____|_____________________________________________________________________________________________________________________|
+               ___________________________________________________________________________________________________________________________
+              |  ST |                                                                                                                     |
+              |  EP |                     How the       * 1D Fast Fourier Transform (FFT) *       Algorithm works                         |
+              |_____|_____________________________________________________________________________________________________________________|
+              |  1  | If the length of the row is 1 (base case), return the row as it is.                                                 |
+              |_____|_____________________________________________________________________________________________________________________|
+              |  2  | Split the row into even and odd indexes.                                                                            |
+              |_____|_____________________________________________________________________________________________________________________|
+              |  3  | Recursively apply the 1D FFT on the even and odd indexes.                                                           |
+              |_____|_____________________________________________________________________________________________________________________|
+              |  4  | Calculate the omega values, which are complex numbers representing the exponential term in the Fourier transform.   |
+              |_____|_____________________________________________________________________________________________________________________|
+              |  5  | Combine the results of the even and odd indexes by adding and subtracting the omega values.                         |
+              |_____|_____________________________________________________________________________________________________________________|
 
 
 ## Usage
