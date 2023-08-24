@@ -2,6 +2,8 @@
 #  ****    The purpose of this program is to further implement the DFT algorithm.    ****
 
 
+import math
+
 class DFTCalculator:
     def __init__(self, N):
         self.N = N
@@ -16,3 +18,14 @@ class DFTCalculator:
     def print_results(self):
         for k, X_k in enumerate(self.X):
             print("X[{}] = {}".format(k, X_k))
+
+    # DFT algorithm
+    def calculate_DFT(self):
+        for k in range(self.N):
+            X_k = 0
+            for n in range(self.N):
+                # Calculate the DFT for each value of k and n
+                X_k += self.x[n] * math.e**(-1j * 2 * math.pi * k * n / self.N)
+            self.X.append(X_k)
+
+
