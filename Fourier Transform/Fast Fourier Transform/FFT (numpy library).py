@@ -37,3 +37,7 @@ class FFTCalculator:
                 t = np.exp(-2j * np.pi * k / self.N) * odd.X[k]
                 self.X[k] = even.X[k] + t
                 self.X[k + self.N // 2] = even.X[k] - t
+
+    # FFT algorithm (2)          ===>           Function np.fft
+    # def fft(self):
+    #     self.X = np.fft.fft(self.x)
