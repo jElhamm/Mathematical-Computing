@@ -86,4 +86,10 @@ def main():
 if __name__ == "__main__":
     main()
 
-# An example of how to use the program is shown.    
+# An example of how to use the program is shown.  
+
+# Note:
+#      To use the ready function in nyn, do the following steps:
+#           1. See line (43).
+#           2. Uncomment the code.
+#           3. Comment the FFT algorithm (1) in line (25).
