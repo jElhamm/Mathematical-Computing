@@ -43,3 +43,47 @@ class FFTCalculator:
     # FFT algorithm (2)          ===>           Function np.fft
     # def fft(self):
     #     self.X = np.fft.fft(self.x)
+
+
+# This part of the code is written as an example to show the output of the code.
+# According to your needs, you can change or delete this part.
+
+def  banner():
+    print("""
+        
+#################################################################################
+#                              ***   Welcome   ***                              #
+#                                                                               #             
+#         You can use this program to calculate the Fourier transform.          #
+#        _____________________________________________________________          #
+#       |                                                             |         #  
+#       |        The formula implemented in this function is          |         #
+#       |     the recursive FFT formula, which can be written as:     |         #
+#       |                                                             |         #
+#       |       X[k] = even.X[k] + exp(-2 π i k / N) * odd.X[k]       |         #
+#       |     X[k+N/2] = even.X[k] - exp(-2 π i k / N) * odd.X[k]     |         #
+#       |_____________________________________________________________|         #
+#                                                                               # 
+#        Note(1): Where X[k] is the k-th element of the output sequence,        #
+#                 even.X[k] and odd.X[k] are the k-th elements of the FFTs      #
+#                 calculated for the even and odd indices respectively,         #
+#                 and N is the length of the input sequence.                    #
+#        Note(2): There is also a section in the code that can perform          #
+#                 the calculation from the ready function.                      #
+#                                                                               #    
+#################################################################################
+    """)
+
+def main():
+    banner()
+    N = int(input("==> Enter the number of samples (N): "))
+    calculator = FFTCalculator(N)
+    calculator.calculateInputValues()
+    calculator.fft()
+    calculator.print_results()
+    print("*******************************************************************\n")
+    
+if __name__ == "__main__":
+    main()
+
+# An example of how to use the program is shown.    
