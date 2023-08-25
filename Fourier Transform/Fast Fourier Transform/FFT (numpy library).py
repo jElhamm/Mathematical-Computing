@@ -5,6 +5,8 @@
 #                                          X[k+N/2] = even.X[k] - exp(-2 π i k / N) * odd.X[k]
 
 
+import numpy as np
+
 class FFTCalculator:
     def __init__(self, N):
         self.N = N
