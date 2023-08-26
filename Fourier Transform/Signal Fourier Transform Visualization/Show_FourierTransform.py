@@ -17,3 +17,9 @@ class FourierTransform:
             raise ValueError("Invalid input signal. It should be a list or a numpy array.")
 
         self.sampling_frequency = sampling_frequency
+
+    def apply_transform(self):
+        # Apply the Fourier transform to the input signal
+        self.fourier_transform = np.fft.fft(self.signal)
+        self.frequency_bins = np.fft.fftfreq(len(self.signal), 1/self.sampling_frequency)
+        
