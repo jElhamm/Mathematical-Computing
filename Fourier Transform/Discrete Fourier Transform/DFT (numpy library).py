@@ -28,4 +28,7 @@ class DFTCalculator:
             X_k = np.sum(x * np.exp(-1j * 2 * np.pi * k * n / self.N))
             self.X.append(X_k)
 
-            
+    # # DFT algorithm (2)          ===>           Function np.fft
+    # def calculate_DFT(self):
+    #     self.X = np.fft.fft(self.x)
+
