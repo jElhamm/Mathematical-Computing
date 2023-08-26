@@ -31,4 +31,12 @@ class FourierTransform:
         plt.title('Input Signal')
         plt.xlabel('Time')
         plt.ylabel('Amplitude')
-        
+
+    # plot the Fourier transform 
+    def plot_transform(self):
+        plt.subplot(2, 1, 2)
+        plt.stem(self.frequency_bins, np.abs(self.fourier_transform))
+        plt.title('Fourier Transform')
+        plt.xlabel('Frequency (Hz)')
+        plt.ylabel('Magnitude')
+                
