@@ -5,7 +5,7 @@
 
 
 import numpy as np
-
+import matplotlib.pyplot as plt
 
 class FourierTransform:
     def __init__(self, inputSignal, sampling_frequency):
@@ -22,4 +22,13 @@ class FourierTransform:
         # Apply the Fourier transform to the input signal
         self.fourier_transform = np.fft.fft(self.signal)
         self.frequency_bins = np.fft.fftfreq(len(self.signal), 1/self.sampling_frequency)
+
+    # plot the input signal
+    def plot_signal(self):
+        time_axis = np.arange(0, len(self.signal)) * (1/self.sampling_frequency)         # Create a time axis based on the sampling frequency
+        plt.subplot(2, 1, 1)
+        plt.plot(time_axis, self.signal)
+        plt.title('Input Signal')
+        plt.xlabel('Time')
+        plt.ylabel('Amplitude')
         
