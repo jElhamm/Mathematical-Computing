@@ -47,4 +47,36 @@ class FourierTransform:
         self.plot_transform()
         plt.tight_layout()
         plt.show() 
-                   
+
+
+# This part of the code is written as an example to show the output of the code.
+# According to your needs, you can change or delete this part.
+
+def  banner():
+    print("""
+        
+#####################################################################################
+#                              ***   Welcome   ***                                  #
+#                                                                                   #             
+#     You can use this program to draw Fourier transform diagrams for a signal.     #
+#      In the output for you, two functions will be displayed, which include:       #
+#                       1. the time graph of the signal                             #
+#                       2. its Fourier transformation.                              #
+#                                                                                   #    
+#####################################################################################
+    """)           
+    
+def main():
+    inputSignal = input("==> Enter the input signal as a comma-separated list of numbers: ").split(",")
+    sampling_frequency = float(input("==> Enter the sampling frequency: "))
+    inputSignal = [float(num) for num in inputSignal]
+    fft = FourierTransform(inputSignal, sampling_frequency)
+    fft.plot()
+    print("\n*************************************************")
+    print("*        (: The graphs are displayed. :)        *")
+    print("*************************************************\n")
+
+if __name__ == "__main__":
+    main()
+
+# An example of how to use the program is shown.  
