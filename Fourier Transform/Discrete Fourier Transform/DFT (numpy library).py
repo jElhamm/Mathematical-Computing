@@ -4,7 +4,7 @@
 #   formula is implemented as follows:   X_k = Σ(x[n] * e^(-j * 2π * k * n / N))
 
 
-
+import numpy as np
 class DFTCalculator:
     def __init__(self, N):
         self.N = N
@@ -19,4 +19,13 @@ class DFTCalculator:
     def print_results(self):
         for k, X_k in enumerate(self.X):
             print("X[{}] = {}".format(k, X_k))
+            
+    # DFT algorithm (1)
+    def calculate_DFT(self):
+        x = np.array(self.x)                            # Convert input signals to numpy arrays for faster computation
+        for k in range(self.N):
+            n = np.arange(self.N)
+            X_k = np.sum(x * np.exp(-1j * 2 * np.pi * k * n / self.N))
+            self.X.append(X_k)
+
             
