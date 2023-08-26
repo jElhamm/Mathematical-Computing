@@ -39,4 +39,12 @@ class FourierTransform:
         plt.title('Fourier Transform')
         plt.xlabel('Frequency (Hz)')
         plt.ylabel('Magnitude')
-                
+
+    def plot(self):
+        self.apply_transform()
+        plt.figure(figsize=(10, 8))
+        self.plot_signal()
+        self.plot_transform()
+        plt.tight_layout()
+        plt.show() 
+                   
