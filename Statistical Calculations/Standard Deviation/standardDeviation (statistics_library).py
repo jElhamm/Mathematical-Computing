@@ -44,6 +44,7 @@ def  banner():
     """)  
 
 def main():
+    banner()
     data = input("   ---> Enter a list of data (separated by spaces): ").split()
     data = [float(x) for x in data]
     standardDeviation_calculator = StandardDeviation(data)
