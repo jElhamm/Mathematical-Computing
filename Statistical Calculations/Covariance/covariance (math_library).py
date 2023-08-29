@@ -25,3 +25,46 @@ class Covariance:
         covariance = self.calculate_covariance()
         print("   ---> Covariance:", covariance)
  
+
+# This part of the code is written as an example to show the output of the code.
+# According to your needs, you can change or delete this part.
+
+def  banner():
+    print("""
+        
+###################################################################################
+#                            ***   Welcome   ***                                  #
+#                                                                                 #             
+#             You can use the program to calculate the (covariance).              #
+#                 The formula for covariance is as follows:                       #
+#                ___________________________________________                      #
+#               |                                           |                     #
+#               |   Cov(x, y) = ∑((xᵢ - μₓ)(yᵢ - μᵧ)) / N   |                     #
+#               |___________________________________________|                     #
+#                                                                                 #
+#       --->   Cov(x, y) = represents covariance between the datasets             #
+#       --->   Σ = sum of                                                         #
+#       --->   xi = represents each individual value in the first dataset         #
+#       --->   yi = represents each individual value in the second dataset        #
+#       --->   μₓ = represents the mean of the first dataset                      #
+#       --->   μᵧ = represents the mean of the second dataset                     #
+#       --->   N = represents the total number of values in the datasets          #
+#                                                                                 #    
+###################################################################################
+    """)  
+
+def main():
+    banner()
+    data1 = input("   ---> Enter a list of data for the first dataset (separated by spaces): ").split()
+    data1 = [float(x) for x in data1]
+    data2 = input("   ---> Enter a list of data for the second dataset (separated by spaces): ").split()
+    data2 = [float(x) for x in data2]
+    covariance_calculator = Covariance(data1, data2)
+    print("\n**********************************************************************************")
+    covariance_calculator.print_covariance()
+    print("**********************************************************************************\n")
+
+if __name__ == "__main__":
+    main()
+
+# An example of how to use the program is shown.
