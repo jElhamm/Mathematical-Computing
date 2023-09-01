@@ -44,3 +44,42 @@ class DataAnalyzer:
         print("Standard Deviation:", std)
         return mean, std
  
+
+# This part of the code is written as an example to show the output of the code.
+# According to your needs, you can change or delete this part.
+
+def  banner():
+    print("""
+        
+************************************************************************************
+*          (:                 ***   Welcome   ***                     :)           *
+*                                                                                  *
+*                  You can use this program to calculate the                       *
+*                (Normal Distribution) and (display its Graph).                    *
+*                      Just enter your list of numbers.                            *
+*                                                                                  *
+************************************************************************************
+*             The formula for Normal Distribution is as follows:                   * 
+*             𝑦 = (1/(𝑠𝑡𝑑 * √(2𝜋))) * 𝑒^−(0.5 * ((𝑥−𝑚𝑒𝑎𝑛)/𝑠𝑡𝑑)^2)                  *
+*                                                                                  *
+*             ***  x    = input value                                              *
+*             ***  mean = standard deviation of the data                           *
+*             ***  𝑠𝑡𝑑  = represents the total number of values in the dataset.     *
+*             ***  𝜋    = mathematical constant pi                                 *
+*             ***  𝑒    = mathematical constant Euler's number                     * 
+*                                                                                  *
+************************************************************************************
+    """)  
+
+def main():
+    banner()
+    analyzer = DataAnalyzer()
+    analyzer.read_data()
+    mean, std = analyzer.calculate_statistics()
+    plotter = NormalDistribution(analyzer.data)
+    plotter.plot()
+
+if __name__ == '__main__':
+    main()
+
+# An example of how to use the program is shown.
