@@ -42,3 +42,43 @@ class DataAnalyzer:
         print("Average:", mean)
         return mean
   
+
+# This part of the code is written as an example to show the output of the code.
+# According to your needs, you can change or delete this part.
+
+def banner():
+    print("""
+        
+************************************************************************************
+*          (:                 ***   Welcome   ***                     :)           *
+*                                                                                  *
+*                  You can use this program to calculate the                       *
+*                (Poisson Distribution) and (display its Graph).                   *
+*                      Just enter your list of numbers.                            *
+*                                                                                  *
+************************************************************************************
+*             The formula for Poisson Distribution is as follows:                  * 
+*                          𝑦 = (𝑒^−𝜆 * 𝜆^𝑥) / 𝑥!                                   *
+*                                                                                  *
+*              **  𝑦    = probability mass function                                *
+*              **  𝑥    = input value                                              *
+*              **  𝜆    = mean or average rate of the event                        *
+*              **  𝑒    = mathematical constant Euler's number                     * 
+*              **  𝑥!   = factorial of x                                           *
+*                                                                                  *
+************************************************************************************
+    """)  
+
+def main():
+    banner()
+    analyzer = DataAnalyzer()
+    analyzer.read_data()
+    mean = analyzer.calculate_statistics()
+    plotter = PoissonDistribution(analyzer.data)
+    plotter.plot()
+    print("****************************************************************\n")
+
+if __name__ == '__main__':
+    main()
+
+# An example of how to use the program is shown.
