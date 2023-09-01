@@ -28,3 +28,19 @@ class NormalDistribution:
         plt.grid(True)                                                                         # Display grid lines
         plt.show()
   
+class DataAnalyzer:
+    def __init__(self):
+        self.data = []
+
+    def read_data(self):
+        data_input = input("Enter a list of numbers (comma-separated): ")
+        self.data = [float(x) for x in data_input.split(',')]
+        
+    # Calculations
+    def calculate_statistics(self):
+        mean = np.mean(self.data)
+        std = np.std(self.data)
+        print("Average:", mean)
+        print("Standard Deviation:", std)
+        return mean, std
+ 
