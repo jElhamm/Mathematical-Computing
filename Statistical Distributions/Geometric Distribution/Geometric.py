@@ -38,3 +38,42 @@ class DataAnalyzer:
         print("Average:", mean)
         return mean
  
+
+# This part of the code is written as an example to show the output of the code.
+# According to your needs, you can change or delete this part.
+
+def banner():
+    print("""
+        
+************************************************************************************
+*          (:                 ***   Welcome   ***                     :)           *
+*                                                                                  *
+*                  You can use this program to calculate the                       *
+*                (Geometric Distribution) and (display its Graph).                 *
+*                      Just enter your list of numbers.                            *
+*                                                                                  *
+************************************************************************************
+*             The formula for Geometric Distribution is as follows:                * 
+*                           𝑦 = (1-𝑝)^(𝑥-1) * 𝑝                                    *
+*                                                                                  *
+*             ***  𝑦    = probability mass function                                *
+*             ***  𝑥    = input value                                              *
+*             ***  𝑝    = probability parameter                                    *
+*                                                                                  *
+************************************************************************************
+    """)  
+
+def main():
+    banner()
+    analyzer = DataAnalyzer()
+    analyzer.read_data()
+    mean = analyzer.calculate_statistics()
+    plotter = GeometricDistribution(analyzer.data)
+    plotter.plot()
+    print("*********************************************************************\n")
+
+
+if __name__ == '__main__':
+    main()
+
+# An example of how to use the program is shown.
