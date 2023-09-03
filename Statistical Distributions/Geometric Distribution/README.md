@@ -12,31 +12,31 @@
    The probability mass function gives the probability of achieving the first success at a specific trial ('x').
    [*more information*](https://www.britannica.com/topic/geometric-distribution)
 
-                     _______________________________________________________________________
-                    |                                                                       |
-                    |         The formula for Geometric Distribution is as follows:         | 
-                    |                       𝑦 = (1-𝑝)^(𝑥-1) * 𝑝                             |
-                    |                                                                       |
-                    |                 -  𝑦    = probability mass function                   |
-                    |                 -  𝑥    = input value                                 |
-                    |                 -  𝑝    = probability parameter                       |
-                    |_______________________________________________________________________|
+                          _______________________________________________________________________
+                          |                                                                       |
+                          |         The formula for Geometric Distribution is as follows:         | 
+                          |                       𝑦 = (1-𝑝)^(𝑥-1) * 𝑝                             |
+                          |                                                                       |
+                          |                 -  𝑦    = probability mass function                   |
+                          |                 -  𝑥    = input value                                 |
+                          |                 -  𝑝    = probability parameter                       |
+                          |_______________________________________________________________________|
 
 
-    * The Geometric Distribution is commonly used in various fields such as statistics, probability theory, 
-    and reliability analysis. It provides insights into the expected waiting time or number of trials until 
-    a success occurs in a sequence of independent trials.
+   * The Geometric Distribution is commonly used in various fields such as statistics, probability theory, 
+   and reliability analysis. It provides insights into the expected waiting time or number of trials until 
+   a success occurs in a sequence of independent trials.
 
 ## Installation
 
    1. Clone the repository or download the code files.
    2. Make sure you have **NumPy** and **Matplotlib** installed. If not, you can install them using pip:
 
-                             __________________________________________________
-                            |                                                  |
-                            |     ***      pip install numpy          ***      |
-                            |     ***      pip install matplotlib     ***      |
-                            |__________________________________________________|
+                                     __________________________________________________
+                                    |                                                  |
+                                    |     ***      pip install numpy          ***      |
+                                    |     ***      pip install matplotlib     ***      |
+                                    |__________________________________________________|
 
 ## Usage
 
