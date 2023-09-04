@@ -53,3 +53,41 @@ class DataAnalyzer:
         print("Average:", mean)
         return mean
  
+# This part of the code is written as an example to show the output of the code.
+# According to your needs, you can change or delete this part.
+
+def banner():
+    print("""
+        
+**************************************************************************************
+*          (:                 ***   Welcome   ***                     :)             *
+*                                                                                    *
+*                  You can use this program to calculate the                         *
+*                (Pascal Distribution) and (display its Graph).                      *
+*                      Just enter your list of numbers.                              *
+*                                                                                    *
+**************************************************************************************
+*             The Pascal Distribution Probability Mass Function (PMF):               * 
+*                   PMF(x) = C(x + r - 1, x) * p^r * (1 - p)^x                       *
+*                                                                                    *
+*             ***   C(n, k)   = the binomial coefficient                             *
+*             ***   x         = number of failures before the rth success occurs     *                                            *
+*             ***   r         = number of successes                                  *
+*             ***   p         = probability of success                               *
+*                                                                                    *
+**************************************************************************************
+    """)
+
+def main():
+    banner()
+    analyzer = DataAnalyzer()
+    analyzer.read_data()
+    mean = analyzer.calculate_statistics()
+    plotter = PascalDistribution(analyzer.data)
+    plotter.plot()
+
+
+if __name__ == '__main__':
+    main()
+
+# An example of how to use the program is shown.
