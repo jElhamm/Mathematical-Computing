@@ -40,3 +40,16 @@ class PascalDistribution:
         plt.grid(True)
         plt.show()
  
+class DataAnalyzer:
+    def __init__(self):
+        self.data = []
+
+    def read_data(self):
+        data_input = input("---> Enter a list of numbers (comma-separated): ")
+        self.data = [int(x) for x in data_input.split(',')]
+
+    def calculate_statistics(self):
+        mean = np.mean(self.data)
+        print("Average:", mean)
+        return mean
+ 
