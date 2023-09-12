@@ -38,3 +38,20 @@ class BernoulliDistribution:
         plt.grid(True)
         plt.show()
  
+class DataAnalyzer:
+    def __init__(self):
+        self.data = []
+
+    def read_data(self):
+        data_input = input("Enter a list of numbers (comma-separated), (All values must be either 0 or 1): ")
+        self.data = [int(x) for x in data_input.split(',')]
+
+        # Check if all values are either 0 or 1
+        if not all(x in [0, 1] for x in self.data):
+            raise ValueError("Invalid input. All values must be either 0 or 1.")
+
+    def calculate_statistics(self):
+        mean = np.mean(self.data)
+        print("Average:", mean)
+        return mean
+ 
