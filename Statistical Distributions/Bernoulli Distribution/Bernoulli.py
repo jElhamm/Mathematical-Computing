@@ -55,3 +55,41 @@ class DataAnalyzer:
         print("Average:", mean)
         return mean
  
+
+# This part of the code is written as an example to show the output of the code.
+# According to your needs, you can change or delete this part.
+
+def banner():
+    print("""
+          
+**********************************************************************************
+*             (:               ***   Welcome   ***                 :)            *
+*                                                                                *
+*                 You can use this program to calculate the                      *
+*              (Bernoulli Distribution) and display its Graph.                   *
+*                                                                                *
+**********************************************************************************
+*                                                                                *
+*         The Bernoulli Distribution Probability Mass Function (PMF):            *
+*                    PMF(x) = p^x * (1 - p)^(1 - x)                              *
+*                                                                                *
+*          --->   x   = 0 or 1 (the possible values in the distribution)         *
+*          --->   p   = probability of success                                   *
+*                                                                                *
+**********************************************************************************
+    """)
+
+
+def main():
+    banner()
+    analyzer = DataAnalyzer()
+    analyzer.read_data()
+    mean = analyzer.calculate_statistics()
+    plotter = BernoulliDistribution(analyzer.data)
+    plotter.plot()
+    print("****************************************************************\n")
+
+if __name__ == '__main__':
+    main()
+
+# An example of how to use the program is shown.
