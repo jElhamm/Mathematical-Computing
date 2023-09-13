@@ -65,3 +65,46 @@ class DataAnalyzer:
         print("---> Average:", mean)
         return mean
  
+
+ 
+# This part of the code is written as an example to show the output of the code.
+# According to your needs, you can change or delete this part.
+
+def banner():
+    print("""
+          
+**************************************************************************************************
+*                  (:               ***   Welcome   ***                 :)                       *
+*                                                                                                *
+*    You can use this program to calculate the (Binomial Distribution) and display its Graph.    *
+*                                                                                                *
+**************************************************************************************************
+*                                                                                                *
+*         Binomial Distribution formula in mathematics is written as follows:                    *
+*                                                                                                *
+*                    PMF(k) = C(n, k) * p^k * (1 - p)^(n - k)                                    *
+*                                                                                                *
+*  --->  PMF(k)  = probability of obtaining 'k' successes in a binomial distribution.            *
+*  --->  C(n, k) = binomial coefficient, calculated as n! / (k! * (n - k)!), which               *
+*                  represents the number of ways to choose 'k' successes from 'n' trials.        *
+*                                                                                                *
+*  --->  p       = probability of success for each trial.                                        *
+*  --->  n       = total number of trials.                                                       *
+*                                                                                                *
+**************************************************************************************************
+    """)
+    
+def main():
+    banner()
+    analyzer = DataAnalyzer()
+    analyzer.read_data()
+    mean = analyzer.calculate_statistics()
+    distribution = BinomialDistribution(analyzer.n, analyzer.p)
+    distribution.plot()
+    print("****************************************************************\n")
+
+
+if __name__ == '__main__':
+    main()
+
+# An example of how to use the program is shown.
