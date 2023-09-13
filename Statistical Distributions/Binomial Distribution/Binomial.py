@@ -41,3 +41,27 @@ class BinomialDistribution:
         plt.grid(True)
         plt.show()
  
+class DataAnalyzer:
+    def __init__(self):
+        self.data = []
+
+    def read_data(self):
+        data_input = input("---> Enter the number of trials (n): ")
+        self.n = int(data_input)
+        
+        p_input = input("---> Enter the probability of success (p): ")
+        self.p = float(p_input)
+        
+        # Check if p is within the valid range
+        if self.p < 0 or self.p > 1:
+            raise ValueError(" ( ! Invalid input. The probability of success (p) must be between 0 and 1. ! )")
+        
+        # Check if n is a positive integer
+        if self.n <= 0 or not isinstance(self.n, int):
+            raise ValueError(" ( ! Invalid input. The number of trials (n) must be a positive integer. ! )")
+
+    def calculate_statistics(self):
+        mean = self.n * self.p
+        print("---> Average:", mean)
+        return mean
+ 
