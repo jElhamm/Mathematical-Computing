@@ -1,15 +1,4 @@
 # You can use this program to calculate the (Multinomial Distribution) and (display its Graph).
-# Multinomial Distribution formula in mathematics is written as follows:
-
-#            result = np.polyval(self.coefficients, x)
-
-# Here, np.polyval is a function from the NumPy library that calculates the value of a polynomial 
-# with the given coefficients (self.coefficients) at a specified value of x. This formula allows 
-# the code to evaluate the multinomial distribution at a given value of x.
-
-
-
-# You can use this program to calculate the (Multinomial Distribution) and (display its Graph).
 # Two types of formulas are implemented in the code.
 
 # (1: Line 28)           result = np.polyval(self.coefficients, x)
@@ -40,7 +29,7 @@ class MultinomialDistribution:
         return result
        
         # Type 2:
-        
+
         # result = 0
         # for i, coef in enumerate(self.coefficients[::-1]):
         #     result += coef * x**i
