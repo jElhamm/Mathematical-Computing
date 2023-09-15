@@ -56,3 +56,45 @@ class DataAnalyzer:
         coefficients = coefficient_str.split()
         self.coefficients = [float(c) for c in coefficients]
  
+
+
+# This part of the code is written as an example to show the output of the code.
+# According to your needs, you can change or delete this part.
+
+def banner():
+    print("""
+        
+*******************************************************************************************************
+*                  (:                 ***   Welcome   ***                     :)                      *
+*                                                                                                     *
+*    You can use this program to calculate the (Multinomial Distribution) and (display its Graph).    *
+*                                Just enter your list of numbers.                                     *                
+*                                                                                                     *
+*    for example:                                                                                     *
+*                 Enter the coefficients of the polynomial (separated by spaces): -1 0 1              *
+*                                                                                                     *
+*******************************************************************************************************
+
+    """) 
+
+def main():
+    banner()
+    analyzer = DataAnalyzer()
+    analyzer.read_data()
+    distribution = MultinomialDistribution(analyzer.coefficients)
+    distribution.plot((-10, 10))
+    print("*******************************************************************\n")
+
+
+if __name__ == '__main__':
+    main()
+
+
+# An example of how to use the program is shown.
+
+
+# Note:
+#      To use the full implementation of the Multinomial distribution formula [Type 2], do the following steps:
+#           1. See line (31).
+#           2. Uncomment the code.
+#           3. Comment the [Type 1] in line (21).
