@@ -47,3 +47,12 @@ class MultinomialDistribution:
         plt.grid(True)
         plt.show()
   
+class DataAnalyzer:
+    def __init__(self):
+        self.coefficients = []
+
+    def read_data(self):
+        coefficient_str = input("Enter the coefficients of the polynomial (separated by spaces): ")
+        coefficients = coefficient_str.split()
+        self.coefficients = [float(c) for c in coefficients]
+ 
