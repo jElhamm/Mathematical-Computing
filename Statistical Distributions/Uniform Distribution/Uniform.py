@@ -42,3 +42,48 @@ class DataAnalyzer:
         print("---> Mean:", mean)
         return mean
  
+
+# This part of the code is written as an example to show the output of the code.
+# According to your needs, you can change or delete this part.
+
+def banner():
+    print("""
+        
+************************************************************************************
+*          (:                 ***   Welcome   ***                     :)           *
+*                                                                                  *
+*                  You can use this program to calculate the                       *
+*                (Uniform Distribution) and (display its Graph).                   *
+*                      Just enter your list of numbers.                            *
+*                                                                                  *
+************************************************************************************
+*       The formula for Uniform Distribution (Probability Density Function):       * 
+*                     𝑦    = 1 / (𝑏 - 𝑎)                                           *
+*                   - 𝑦    = probability density function                          *
+*                   - 𝑎    = minimum value                                         *
+*                   - 𝑏    = maximum value                                         *
+*                                                                                  *
+************************************************************************************
+    """)
+
+def main():
+    banner()
+    analyzer = DataAnalyzer()
+    analyzer.read_data()
+    mean = analyzer.calculate_statistics()
+    plotter = UniformDistribution(analyzer.data)
+    plotter.plot()
+    print("*********************************************************************\n")
+
+
+if __name__ == '__main__':
+    main()
+
+
+# An example of how to use the program is shown.
+ 
+
+# Note:
+#      - In the code, we specify the minimum and maximum values ​​according to the input data provided by the user. 
+#      - Then we determine the probability of a uniform distribution between these two values. 
+#      - Finally, using matplotlib, we draw a horizontal line with constant probability density in this interval.
