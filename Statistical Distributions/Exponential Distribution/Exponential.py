@@ -1,9 +1,9 @@
-# You can use this program to calculate the (Uniform Distribution) and (display its Graph).
+# You can use this program to calculate the (Exponential Distribution) and (display its Graph).
 
-# Uniform Distribution formula in mathematics is written as follows:        f(x) = λ * e^(-λ * x)
-#                                                                      --->    λ = rate parameter 
-#                                                                      --->    x = random variable
-#                                                                      ---> The rate parameter is calculated as the inverse of the mean of the data.
+# Exponential Distribution formula in mathematics is written as follows:      f(x) = λ * e^(-λ * x)
+#                                                                        --->    λ = rate parameter 
+#                                                                        --->    x = random variable
+#                                                                        ---> The rate parameter is calculated as the inverse of the mean of the data.
 
 
 
@@ -38,3 +38,43 @@ class DataAnalyzer:
         print("---> Mean:", mean)
         return mean
  
+
+# This part of the code is written as an example to show the output of the code.
+# According to your needs, you can change or delete this part.
+
+def banner():
+    print("""
+          
+*****************************************************************************************************
+*                  (:               ***   Welcome   ***                 :)                          *
+*                                                                                                   *
+*    You can use this program to calculate the (Exponential Distribution) and display its Graph.    *
+*                                                                                                   *
+*****************************************************************************************************
+*                                                                                                   *
+*           Exponential Distribution formula in mathematics is written as follows:                  *
+*                                                                                                   *
+*                                  f(x) = λ * e^(-λ * x)                                            *
+*                                                                                                   *
+*                  --->    λ = rate parameter                                                       *
+*                  --->    x = random variable                                                      *
+*                  ---> The rate parameter is calculated as the inverse of the mean of the data.    *
+*                                                                                                   *
+****************************************************************************************************
+    """)
+
+def main():
+    banner()
+    analyzer = DataAnalyzer()
+    analyzer.read_data()
+    mean = analyzer.calculate_statistics()
+    plotter = ExponentialDistribution(analyzer.data)
+    plotter.plot()
+    print("*********************************************************************\n")
+
+
+if __name__ == '__main__':
+    main()
+
+
+# An example of how to use the program is shown.
