@@ -39,3 +39,45 @@ class DataAnalyzer:
         print("---> Mean:", mean)
         return mean
  
+
+# This part of the code is written as an example to show the output of the code.
+# According to your needs, you can change or delete this part.
+
+def banner():
+    print("""
+          
+****************************************************************************************************
+*                  (:               ***   Welcome   ***                 :)                         *
+*                                                                                                  *
+*    You can use this program to calculate the (Laplacian Distribution) and display its Graph.     *
+*                                                                                                  *
+****************************************************************************************************
+*                                                                                                  *
+*           Laplacian Distribution formula in mathematics is written as follows:                   *
+*                                                                                                  *
+*                             f(x) = 0.5 * e^(-|x - μ| / b) / b                                    *
+*                                                                                                  *
+*                  ---> μ    = location parameter                                                  *
+*                  ---> b    = scale parameter                                                     *
+*                                                                                                  *
+*          The scale parameter is calculated as the square root of 0.5 times the                   *
+*                 median absolute deviation of the data from the median.                           *
+*                                                                                                  *
+****************************************************************************************************
+    """)
+
+def main():
+    banner()
+    analyzer = DataAnalyzer()
+    analyzer.read_data()
+    mean = analyzer.calculate_statistics()
+    plotter = LaplacianDistribution(analyzer.data)
+    plotter.plot()
+    print("*********************************************************************\n")
+
+
+if __name__ == '__main__':
+    main()
+
+
+# An example of how to use the program is shown.
