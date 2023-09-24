@@ -36,3 +36,16 @@ def plot(self):
     plt.grid(True)                                                      # Add a grid to the graph
     plt.show()
   
+class DataAnalyzer:
+    def __init__(self):
+        self.data = []
+
+    def read_data(self):
+        data_input = input("---> Enter a list of numbers (comma-separated): ")
+        self.data = [float(x.strip()) for x in data_input.split(',')]
+
+    def calculate_statistics(self):
+        mean = np.mean(self.data)
+        print("---> Mean:", mean)
+        return mean
+ 
