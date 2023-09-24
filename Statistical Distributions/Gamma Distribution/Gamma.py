@@ -49,3 +49,42 @@ class DataAnalyzer:
         print("---> Mean:", mean)
         return mean
  
+
+# This part of the code is written as an example to show the output of the code.
+# According to your needs, you can change or delete this part.
+
+def banner():
+    print("""
+          
+******************************************************************************************************************************
+*                              (:               ***   Welcome   ***                 :)                                       *
+*                                                                                                                            *
+*                    You can use this program to calculate the (Gamma Distribution) and display its Graph.                   *
+*                                                                                                                            *
+******************************************************************************************************************************
+*       Gamma Distribution formula in mathematics is written as follows:   f(x) = (x^(k-1) * e^(-x/θ)) / (θ^k * Γ(k))        *
+*                                                                                                                            *
+*          --->  'x' is the random variable                                                                                  *
+*          --->  'k' is the shape parameter                                                                                  *
+*          --->  'θ' is the scale parameter, which is equal to the mean divided by k                                         *
+*          --->  'e' is the base of the natural logarithm                                                                    *
+*          --->  'Γ' is the gamma function, which is a generalization of the factorial function to non-integer values.       *
+*                                                                                                                            *
+******************************************************************************************************************************
+    """)
+
+def main():
+    banner()
+    analyzer = DataAnalyzer()
+    analyzer.read_data()
+    k = float(input("---> Enter the shape parameter (k): "))
+    mean = analyzer.calculate_statistics()
+    plotter = GammaDistribution(analyzer.data, k)
+    plotter.plot()
+    print("*********************************************************************\n")
+
+if __name__ == '__main__':
+    main()
+
+
+# An example of how to use the program is shown.
