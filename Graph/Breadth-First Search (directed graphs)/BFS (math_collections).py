@@ -33,3 +33,35 @@ class Graph:
                     queue.append((neighbor, path + [neighbor]))         # Enqueue the neighbor with the extended path
         return None                                                     # If no path from start to goal is found, return None
  
+
+# The DataAnalysis class utilizes the Graph class to analyze data by taking user input for the number of edges and
+# the edges themselves, and then finding the shortest path between a start node and a goal node.
+
+
+class DataAnalysis:
+    def __init__(self):
+        self.graph = Graph()
+
+    def print_graph_shape(self):
+        print(" *** Graph Shape: ***")
+        for node, neighbors in self.graph.graph.items():
+            print(f" {node} -> {', '.join(neighbors)}")
+
+    def analyze_data(self):
+        n = int(input("---> Enter the number of edges: "))
+        for _ in range(n):
+            u, v = input("---> Enter an edge (space-separated): ").split()
+            self.graph.add_edge(u, v)
+
+        start_node = input("---> Enter the start node: ")
+        goal_node = input("---> Enter the goal node: ")
+        print("***************************************************************************\n")
+
+        self.print_graph_shape()
+
+        shortest_path = self.graph.bfs(start_node, goal_node)
+        if shortest_path:
+            print("\n *** Shortest path:", "->".join(shortest_path))
+        else:
+            print(" (  !  No path found.  !  )")
+ 
