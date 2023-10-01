@@ -55,3 +55,48 @@ class DataAnalysis:
         else:
             print(" (  !  No path found.  !  )")
  
+ 
+
+# This part of the code is written as an example to show the output of the code.
+# According to your needs, you can change or delete this part.
+
+def banner():
+    print(
+        """
+------------------------------------------------------------------------------
+|               (:       ***   Welcome   ***       :)                        |
+|                                                                            |
+|      This program implements a graph data structure and performs           |
+|           data analysis using breadth-first search (BFS).                  |
+|                                                                            |
+|                 For Example:                                               |
+|      ---> Enter the number of edges: 5                                     |
+|      ---> Enter an edge (space-separated): A B                             |
+|      ---> Enter an edge (space-separated): B C                             |
+|      ---> Enter an edge (space-separated): C D                             |
+|      ---> Enter an edge (space-separated): A E                             |
+|      ---> Enter an edge (space-separated): E F                             |
+|      ---> Enter the start node: A                                          |
+|      ---> Enter the goal node: D                                           |
+|      *** Graph Shape: ***                                                  |
+|       A -> B                                                               |
+|       B -> C                                                               |
+|       C -> D                                                               |
+|       A -> E                                                               |
+|       E -> F                                                               |
+|       *** Shortest path: A->B->C->D                                        |
+|                                                                            |
+------------------------------------------------------------------------------
+        """)
+
+def main():
+    banner()
+    data_analysis = DataAnalysis()
+    data_analysis.analyze_data()
+    print("***************************************************************************\n")
+
+if __name__ == "__main__":
+    main()
+
+
+# An example of how to use the program is shown.
