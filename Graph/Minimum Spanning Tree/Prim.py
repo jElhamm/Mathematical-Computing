@@ -42,3 +42,33 @@ class Graph:
 
         return min_spanning_tree
  
+
+# The DataAnalysis class utilizes the Graph class to analyze data by taking user input for the number of edges and
+# the edges themselves, and then finding the minimum spanning tree of the graph.
+
+class DataAnalysis:
+    def __init__(self):
+        self.graph = Graph()
+
+    def print_graph_shape(self):
+        print(" *** Graph Shape: ***")
+        for node, edges in self.graph.graph.items():
+            for edge in edges:
+                v, weight = edge
+                print(f"({node}) -[{weight}]-> ({v})")
+
+    def analyze_data(self):
+        n = int(input("---> Enter the number of edges: "))
+        for _ in range(n):
+            u, v, weight = input("---> Enter an edge (space-separated, with weight): ").split()
+            weight = int(weight)
+            self.graph.add_edge(u, v, weight)
+
+        print("***************************************************************************\n")
+        self.print_graph_shape()
+
+        min_spanning_tree = self.graph.prim()
+        print("\n *** Minimum Spanning Tree ***")
+        for u, v, weight in min_spanning_tree:
+            print(f"({u}) -[{weight}]-> ({v})")
+ 
