@@ -72,3 +72,55 @@ class DataAnalysis:
         for u, v, weight in min_spanning_tree:
             print(f"({u}) -[{weight}]-> ({v})")
  
+
+
+# This part of the code is written as an example to show the output of the code.
+# According to your needs, you can change or delete this part.
+
+def banner():
+    print("""
+          
+------------------------------------------------------------------------------
+|               (:       ***   Welcome   ***       :)                        |
+|                                                                            |
+|      This program implements a graph data structure and performs           |
+|           data analysis using Prim's algorithm for minimum                 |
+|               spanning tree on an undirected weighted graph.               |
+|                                                                            |
+|                 For Example:                                               |
+|      ---> Enter the number of edges: 6                                     |
+|      ---> Enter an edge (space-separated, with weight): A B 1              |
+|      ---> Enter an edge (space-separated, with weight): B C 4              |
+|      ---> Enter an edge (space-separated, with weight): C D 3              |
+|      ---> Enter an edge (space-separated, with weight): D E 2              |
+|      ---> Enter an edge (space-separated, with weight): E F 5              |
+|      ---> Enter an edge (space-separated, with weight): F A 6              |
+|      *** Graph Shape: ***                                                  |
+|      (A) -[1]-> (B)                                                        |
+|      (B) -[4]-> (C)                                                        |
+|      (C) -[3]-> (D)                                                        |
+|      (D) -[2]-> (E)                                                        |
+|      (E) -[5]-> (F)                                                        |
+|      (F) -[6]-> (A)                                                        |
+|                                                                            |
+|       *** Minimum Spanning Tree ***                                        |
+|      (A) -[1]-> (B)                                                        |
+|      (B) -[4]-> (C)                                                        |
+|      (C) -[3]-> (D)                                                        |
+|      (D) -[2]-> (E)                                                        |
+|      (E) -[5]-> (F)                                                        |
+|                                                                            |
+------------------------------------------------------------------------------
+        """)
+
+def main():
+    banner()
+    data_analysis = DataAnalysis()
+    data_analysis.analyze_data()
+    print("***************************************************************************\n")
+
+if __name__ == "__main__":
+    main()
+
+
+# An example of how to use the program is shown.
