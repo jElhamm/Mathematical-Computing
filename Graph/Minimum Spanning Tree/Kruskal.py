@@ -60,3 +60,23 @@ class Graph:
 
         return result
  
+
+# The DisjointSet class represents a disjoint-set data structure.
+# Used in Kruskal's algorithm to keep track of connected components.
+
+class DisjointSet:
+    def __init__(self, vertices):
+        self.parent = {}
+        for v in vertices:
+            self.parent[v] = v
+
+    # Find the parent of a vertex (with path compression)
+    def find(self, v):
+        if self.parent[v] != v:
+            self.parent[v] = self.find(self.parent[v])
+        return self.parent[v]
+
+    # Union two subsets by setting the parent of one vertex to the other vertex
+    def union(self, v1, v2):
+        self.parent[self.find(v1)] = self.find(v2)
+ 
