@@ -80,3 +80,35 @@ class DisjointSet:
     def union(self, v1, v2):
         self.parent[self.find(v1)] = self.find(v2)
  
+
+
+# The DataAnalysis class utilizes the Graph and DisjointSet classes to analyze data by taking user input for the
+# number of vertices, the number of edges, and the edges themselves, and then finding the minimum spanning tree of the graph.
+
+class DataAnalysis:
+    def __init__(self):
+        self.graph = None
+
+    def print_graph_shape(self):
+        print(" *** Graph Shape: ***")
+        for u, v, weight in self.graph.edges:
+            print(f"({u}) -[{weight}]-> ({v})")
+
+    def analyze_data(self):
+        n = int(input("---> Enter the number of vertices: "))
+        self.graph = Graph(n)
+
+        m = int(input("---> Enter the number of edges: "))
+        for _ in range(m):
+            u, v, weight = input("---> Enter an edge (space-separated, with weight): ").split()
+            weight = int(weight)
+            self.graph.add_edge(u, v, weight)
+
+        print("***************************************************************************\n")
+        self.print_graph_shape()
+
+        min_spanning_tree = self.graph.kruskal()
+        print("\n *** Minimum Spanning Tree ***")
+        for u, v, weight in min_spanning_tree:
+            print(f"({u}) -[{weight}]-> ({v})")
+ 
