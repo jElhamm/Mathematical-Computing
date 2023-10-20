@@ -25,3 +25,38 @@ class CumulativeDistributionFunction:
         for value, prob in cdf.items():
             print(f"      - F({value}) = {prob}")
  
+
+
+# This part of the code is written as an example to show the output of the code.
+# According to your needs, you can change or delete this part.
+
+def banner():
+    print("""
+        
+################################################################################
+#                             (:   Welcome   :)                                #
+#                                                                              #
+#      You can use the program to calculate the Cumulative Distribution        #
+#      Function (CDF).                                                         #
+#                                                                              #
+#      The Cumulative Distribution Function (CDF) calculates                   #
+#      the probability that a random variable X takes on a value less than     #
+#      or equal to a specific value x.                                         #
+#                                                                              #
+################################################################################
+    """)
+
+def main():
+    banner()
+    data = input("   ---> Enter a list of data (separated by spaces): ").split()
+    data = [float(x) for x in data]
+    cdf_calculator = CumulativeDistributionFunction(data)
+    print("\n**********************************************************************************")
+    cdf_calculator.print_cdf()
+    print("**********************************************************************************\n")
+
+if __name__ == "__main__":
+    main()
+
+
+# An example of how to use the program is shown.
