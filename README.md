@@ -10,19 +10,19 @@
 * [Graph](Graph)
 
 
-   [Minimum Spanning Tree](Minimum%20Spanning%20Tree)
+   [Minimum Spanning Tree](Graph/Minimum%20Spanning%20Tree)
 
 
-   [Depth-First Search (directed graphs)](Depth-First%20Search%20(directed%20graphs))
+   [Depth-First Search (directed graphs)](Graph/Depth-First%20Search%20(directed%20graphs))
 
 
-   [Depth-First Search (undirected graphs)](Depth-First%20Search%20(undirected%20graphs))
+   [Depth-First Search (undirected graphs)](Graph/Depth-First%20Search%20(undirected%20graphs))
 
 
-   [Breadth-First Search (directed graphs)](Breadth-First%20Search%20(directed%20graphs))
+   [Breadth-First Search (directed graphs)](Graph/Breadth-First%20Search%20(directed%20graphs))
 
 
-   [Breadth-First Search (undirected graphs)](Breadth-First%20Search%20(undirected%20graphs))
+   [Breadth-First Search (undirected graphs)](Graph/Breadth-First%20Search%20(undirected%20graphs))
 
 
 * [Matrix](Matrix)
